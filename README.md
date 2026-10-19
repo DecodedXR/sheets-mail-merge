@@ -1,5 +1,6 @@
 # Free Mail Merge for Google Sheets (YAMM alternative)
-n![Free Mail Merge for Google Sheets](assets/cover.png)
+
+![Free Mail Merge for Google Sheets](assets/cover.png)
 
 Send personalized Gmail from a Google Sheet, using a normal Gmail draft as the template. One Apps Script file: no add-on, no subscription, no per-email limits beyond Gmail's own. Your data never leaves your Google account.
 
