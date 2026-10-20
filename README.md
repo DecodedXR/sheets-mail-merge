@@ -6,6 +6,7 @@ Send personalized Gmail from a Google Sheet, using a normal Gmail draft as the t
 
 - `{{Column Name}}` placeholders in the subject and body
 - Formatting, inline images and attachments carry over from the draft
+- **Different attachment for each person:** add an **Attachments** column with Google Drive links ([how](https://decodedxr.github.io/sheets-mail-merge/mail-merge-with-attachments-google-sheets.html))
 - **Send Test to Myself** before the real send
 - An **Email Status** column means re-running never double-sends, and it resumes after Gmail's daily limit
 
@@ -33,6 +34,7 @@ New to mail merge? Read the [step-by-step guide](https://decodedxr.github.io/she
 
 - The **Email Status** column records each send. Rows with any status are skipped, so re-running never double-sends — clear the cell to resend someone.
 - Free Gmail allows ~**100 recipients/day** (Google Workspace: 1,500). The script stops at the quota; run it again the next day and it picks up where it left off.
+- **Attachments** column (optional): one or more Google Drive links per row, separated by commas. Each file is attached to that row's email only; Google Docs, Sheets and Slides are attached as PDFs. Gmail's 25 MB limit per email applies. Using it adds a Google Drive permission the first time.
 - Blank email cells are skipped; bad addresses get `ERROR: ...` in the status column and are retried on the next run (fix the address first).
 
 ## More free Sheets tools

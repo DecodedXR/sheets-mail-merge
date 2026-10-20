@@ -67,7 +67,7 @@ Choose **📧 Mail Merge → Send Emails** and pick the same draft. Each row get
 
 **Do I need to install an add-on?** No. It's one script file inside your own sheet, so no third-party add-on gets access to your data.
 
-**Can I mail merge with attachments?** Yes. Attach files to the Gmail draft, and every email includes them.
+**Can I mail merge with attachments?** Yes. Attach files to the Gmail draft, and every email includes them. To send a **different file to each person**, add an Attachments column with Google Drive links: see [mail merge with personalized attachments](mail-merge-with-attachments-google-sheets.html).
 
 **Do images in the email work?** Yes. Images pasted into the draft body are re-attached inline so they display instead of showing as broken.
 

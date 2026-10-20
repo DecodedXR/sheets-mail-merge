@@ -5,10 +5,13 @@
  * An "Email Status" column is created automatically to track sends.
  * Compose a Gmail DRAFT with {{Column Name}} placeholders in the
  * subject and/or body (formatting, images, attachments all work).
+ * Optional "Attachments" column: Google Drive links (comma-separated) to attach
+ * different files to each person's email.
  */
 
 const EMAIL_COL = 'Email';
 const STATUS_COL = 'Email Status';
+const ATTACH_COL = 'Attachments';
 
 function onOpen() {
   SpreadsheetApp.getUi()
@@ -31,6 +34,7 @@ function sendEmails(testMode) {
   const data = sheet.getDataRange().getDisplayValues();
   const headers = data[0];
   const emailIdx = headers.indexOf(EMAIL_COL);
+  const attachIdx = headers.indexOf(ATTACH_COL);
   if (emailIdx === -1) {
     ui.alert('No "' + EMAIL_COL + '" column found in row 1.');
     return;
@@ -73,7 +77,7 @@ function sendEmails(testMode) {
     try {
       GmailApp.sendEmail(testMode ? Session.getActiveUser().getEmail() : email, fill(template.subject), '', {
         htmlBody: fill(template.html, true),
-        attachments: template.attachments,
+        attachments: template.attachments.concat(attachIdx === -1 ? [] : driveFiles_(row[attachIdx])),
         inlineImages: template.inlineImages,
       });
       if (testMode) {
@@ -122,6 +126,15 @@ function inlineImageMap_(msg) {
     if (img) map[m[1]] = img;
   }
   return map;
+}
+
+/** Blobs for every Google Drive file link or ID in a cell. */
+function driveFiles_(cell) {
+  return driveIds_(cell).map(id => DriveApp.getFileById(id).getBlob());
+}
+
+function driveIds_(cell) {
+  return String(cell).match(/[-\w]{25,}/g) || [];
 }
 
 function escapeHtml_(s) {
