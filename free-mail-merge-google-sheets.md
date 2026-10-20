@@ -79,4 +79,4 @@ Choose **📧 Mail Merge → Send Emails** and pick the same draft. Each row get
 
 ---
 
-[Get the script on GitHub](https://github.com/DecodedXR/sheets-mail-merge) · If it saves you time, you can [pay what you want on Gumroad](https://decodedpc.gumroad.com/l/hokvda).
+[Get the script on GitHub](https://github.com/DecodedXR/sheets-mail-merge) · If it saves you time, you can [pay what you want on Gumroad](https://decodedpc.gumroad.com/l/hokvda). · Also free: [automatic deadline reminders from Google Sheets](https://decodedxr.github.io/sheets-deadline-reminders/automatic-email-reminders-google-sheets.html)

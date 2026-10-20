@@ -35,6 +35,10 @@ New to mail merge? Read the [step-by-step guide](https://decodedxr.github.io/she
 - Free Gmail allows ~**100 recipients/day** (Google Workspace: 1,500). The script stops at the quota; run it again the next day and it picks up where it left off.
 - Blank email cells are skipped; bad addresses get `ERROR: ...` in the status column and are retried on the next run (fix the address first).
 
+## More free Sheets tools
+
+- [Sheets Deadline Reminders](https://github.com/DecodedXR/sheets-deadline-reminders): email people automatically before a due date in your sheet.
+
 ## Support
 
 Free forever (MIT). If it saved you a YAMM subscription, you can [pay what you want on Gumroad](https://decodedpc.gumroad.com/l/hokvda).
