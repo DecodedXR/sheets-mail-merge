@@ -33,7 +33,8 @@ function sendEmails(testMode) {
   const sheet = SpreadsheetApp.getActiveSheet();
   const data = sheet.getDataRange().getDisplayValues();
   const headers = data[0];
-  const emailIdx = headers.indexOf(EMAIL_COL);
+  let emailIdx = headers.indexOf(EMAIL_COL);
+  if (emailIdx === -1) emailIdx = headers.indexOf('Email Address'); // Google Forms response sheets
   const attachIdx = headers.indexOf(ATTACH_COL);
   if (emailIdx === -1) {
     ui.alert('No "' + EMAIL_COL + '" column found in row 1.');

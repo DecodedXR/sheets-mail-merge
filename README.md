@@ -15,7 +15,7 @@ New to mail merge? Read the [step-by-step guide](https://decodedxr.github.io/she
 ## One-time setup (5 minutes)
 
 1. Open the Google Sheet with your recipient list.
-2. Make sure **row 1 has headers** and one column is named exactly **Email**.
+2. Make sure **row 1 has headers** and one column is named exactly **Email** (a Google Forms response sheet's **Email Address** column works too).
 3. **Extensions → Apps Script**, delete the placeholder code, paste in `Code.gs`, save.
 4. Reload the Sheet — a **📧 Mail Merge** menu appears.
 5. The first run asks for Google permissions. Because it's your own unpublished script, Google shows "Google hasn't verified this app": click **Advanced → Go to (your project name)** → **Allow**. It only needs Sheets and Gmail access.
