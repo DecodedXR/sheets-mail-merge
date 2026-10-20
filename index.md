@@ -1,6 +1,7 @@
 ---
 title: Free Mail Merge for Google Sheets
 description: Send a personalized Gmail to every row of a Google Sheet, using a Gmail draft as the template. One free Apps Script file, no add-on.
+image: https://decodedxr.github.io/sheets-mail-merge/assets/cover.png
 ---
 
 # Free Mail Merge for Google Sheets
