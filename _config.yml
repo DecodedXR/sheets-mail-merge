@@ -1,2 +1,4 @@
 title: Free Mail Merge for Google Sheets
 description: Send personalized Gmail from a Google Sheet. One free Apps Script file, no add-on.
+plugins:
+  - jekyll-sitemap
