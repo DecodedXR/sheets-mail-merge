@@ -2,6 +2,7 @@
 title: Mail merge with a different attachment for each person (Google Sheets, free)
 description: Send personalized Gmail from Google Sheets where every recipient gets their own file, such as an invoice, certificate or report. Free Apps Script, no add-on.
 ---
+{% raw %}
 
 # Mail merge with a different attachment for each person (Google Sheets, free)
 
@@ -48,3 +49,4 @@ If each person's file is something like a certificate or invoice that you'd othe
 ---
 
 [Get the script on GitHub](https://github.com/DecodedXR/sheets-mail-merge) · [Setup guide](free-mail-merge-google-sheets.html) · If it saves you time, you can [pay what you want on Gumroad](https://decodedpc.gumroad.com/l/hokvda).
+{% endraw %}

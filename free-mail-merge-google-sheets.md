@@ -2,6 +2,7 @@
 title: How to mail merge in Google Sheets for free (no add-on)
 description: Send personalized Gmail to everyone in a Google Sheet using a Gmail draft as the template. Free, no add-on, no subscription, with a test send and no double-sends.
 ---
+{% raw %}
 
 # How to mail merge in Google Sheets for free (no add-on)
 
@@ -80,3 +81,4 @@ Choose **📧 Mail Merge → Send Emails** and pick the same draft. Each row get
 ---
 
 [Get the script on GitHub](https://github.com/DecodedXR/sheets-mail-merge) · If it saves you time, you can [pay what you want on Gumroad](https://decodedpc.gumroad.com/l/hokvda). · Also free: [automatic deadline reminders from Google Sheets](https://decodedxr.github.io/sheets-deadline-reminders/automatic-email-reminders-google-sheets.html)
+{% endraw %}
