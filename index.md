@@ -14,6 +14,7 @@ Send a personalized Gmail to every row of a Google Sheet, using a Gmail draft as
 
 - [How to mail merge in Google Sheets for free](free-mail-merge-google-sheets.html)
 - [Mail merge with a different attachment for each person](mail-merge-with-attachments-google-sheets.html)
+- [A free YAMM alternative (no 20-a-day cap)](free-yamm-alternative.html)
 
 ## Get it
 

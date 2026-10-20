@@ -67,6 +67,8 @@ Choose **📧 Mail Merge → Send Emails** and pick the same draft. Each row get
 
 **Is it really free?** Yes. The script is MIT licensed and runs on your own Google account. The only limit is Gmail's daily quota.
 
+**How is it different from YAMM?** Same Gmail-draft workflow, without YAMM's 20-a-day free limit. See [the comparison](free-yamm-alternative.html).
+
 **Do I need to install an add-on?** No. It's one script file inside your own sheet, so no third-party add-on gets access to your data.
 
 **Can I mail merge with attachments?** Yes. Attach files to the Gmail draft, and every email includes them. To send a **different file to each person**, add an Attachments column with Google Drive links: see [mail merge with personalized attachments](mail-merge-with-attachments-google-sheets.html).
