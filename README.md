@@ -15,7 +15,7 @@ Send personalized Gmail from a Google Sheet, using a normal Gmail draft as the t
 2. Make sure **row 1 has headers** and one column is named exactly **Email**.
 3. **Extensions → Apps Script**, delete the placeholder code, paste in `Code.gs`, save.
 4. Reload the Sheet — a **📧 Mail Merge** menu appears.
-5. First run will ask for Google permissions (it's your own script — click Advanced → Allow).
+5. The first run asks for Google permissions. Because it's your own unpublished script, Google shows "Google hasn't verified this app": click **Advanced → Go to (your project name)** → **Allow**. It only needs Sheets and Gmail access.
 
 ## Sending a mailing
 
@@ -24,14 +24,14 @@ Send personalized Gmail from a Google Sheet, using a normal Gmail draft as the t
    >
    > Hi {{First Name}}, ...
    Formatting, images, and attachments all carry over. Leave it as a draft.
-2. In the Sheet: **📧 Mail Merge → Send Test to Myself** — sends row 2's version to your own inbox.
+2. In the Sheet: **📧 Mail Merge → Send Test to Myself** — sends the first unsent row's version to your own inbox.
 3. Looks good? **📧 Mail Merge → Send Emails**.
 
 ## Notes
 
 - The **Email Status** column records each send. Rows with any status are skipped, so re-running never double-sends — clear the cell to resend someone.
 - Free Gmail allows ~**100 recipients/day** (Google Workspace: 1,500). The script stops at the quota; run it again the next day and it picks up where it left off.
-- Blank email cells are skipped; bad addresses get `ERROR: ...` in the status column.
+- Blank email cells are skipped; bad addresses get `ERROR: ...` in the status column and are retried on the next run (fix the address first).
 
 ## Support
 

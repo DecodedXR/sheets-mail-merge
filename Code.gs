@@ -56,31 +56,37 @@ function sendEmails(testMode) {
   for (let r = 1; r < data.length; r++) {
     const row = data[r];
     const email = (row[emailIdx] || '').trim();
-    const status = row[statusIdx];
-    if (!email || status) { skipped++; continue; }
+    const status = String(row[statusIdx] || '');
+    // Skip blanks and rows already sent; rows marked ERROR are retried.
+    if (!email || (status && !status.startsWith('ERROR'))) { skipped++; continue; }
     if (sent >= quota) {
       ui.alert('Daily Gmail quota reached after ' + sent + ' emails. Run again tomorrow — already-sent rows are skipped.');
       break;
     }
 
-    const fill = s => s.replace(/{{\s*([^}]+?)\s*}}/g, (_, name) => {
+    const fill = (s, escape) => s.replace(/{{\s*([^}]+?)\s*}}/g, (_, name) => {
       const i = headers.indexOf(name.trim());
-      return i === -1 ? '' : row[i];
+      const v = i === -1 ? '' : String(row[i]);
+      return escape ? escapeHtml_(v) : v;
     });
 
     try {
       GmailApp.sendEmail(testMode ? Session.getActiveUser().getEmail() : email, fill(template.subject), '', {
-        htmlBody: fill(template.html),
+        htmlBody: fill(template.html, true),
         attachments: template.attachments,
         inlineImages: template.inlineImages,
       });
       if (testMode) {
-        ui.alert('Test sent to your own inbox (using row 2 data). Check it, then run "Send Emails".');
+        ui.alert('Test sent to your own inbox using row ' + (r + 1) + ' (the first unsent row). Check it, then run "Send Emails".');
         return;
       }
       sheet.getRange(r + 1, statusIdx + 1).setValue('Sent ' + new Date().toLocaleString());
       sent++;
     } catch (e) {
+      if (testMode) {
+        ui.alert('Test send failed: ' + e.message);
+        return;
+      }
       sheet.getRange(r + 1, statusIdx + 1).setValue('ERROR: ' + e.message);
     }
   }
@@ -106,14 +112,18 @@ function pickDraft_(ui) {
   return match;
 }
 
-/** Re-attach inline images so they render instead of showing as broken. */
+/** Re-attach inline images so they render instead of showing as broken.
+ *  Gmail tags each inline <img> with its cid and file name (alt); match by name. */
 function inlineImageMap_(msg) {
+  const imgs = msg.getAttachments({ includeInlineImages: true, includeAttachments: false });
   const map = {};
-  msg.getAttachments({ includeInlineImages: true, includeAttachments: false })
-    .forEach((img, i) => {
-      const cid = (msg.getBody().match(/img[^>]*src="cid:([^"]+)"/gi) || [])[i];
-      const m = cid && cid.match(/cid:([^"]+)/);
-      if (m) map[m[1]] = img;
-    });
+  for (const m of msg.getBody().matchAll(/<img[^>]*?src="cid:([^"]+)"[^>]*?alt="([^"]*)"[^>]*>/g)) {
+    const img = imgs.find(a => a.getName() === m[2]);
+    if (img) map[m[1]] = img;
+  }
   return map;
+}
+
+function escapeHtml_(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
