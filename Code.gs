@@ -1,3 +1,5 @@
+/** @OnlyCurrentDoc */ // asks Google for access to this spreadsheet only, not all your sheets
+
 /**
  * Mail Merge for Google Sheets — YAMM-style, no add-on install needed.
  *
