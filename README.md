@@ -9,6 +9,8 @@ Send personalized Gmail from a Google Sheet, using a normal Gmail draft as the t
 - **Send Test to Myself** before the real send
 - An **Email Status** column means re-running never double-sends, and it resumes after Gmail's daily limit
 
+New to mail merge? Read the [step-by-step guide](https://decodedxr.github.io/sheets-mail-merge/free-mail-merge-google-sheets.html).
+
 ## One-time setup (5 minutes)
 
 1. Open the Google Sheet with your recipient list.
