@@ -72,6 +72,8 @@ Choose **📧 Mail Merge → Send Emails** and pick the same draft. Each row get
 
 **Do images in the email work?** Yes. Images pasted into the draft body are re-attached inline so they display instead of showing as broken.
 
+**Can I send each person their own pre-filled Google Form?** Yes. Build a link per row with [Form Prefill Links](https://decodedxr.github.io/form-prefill-links/prefill-google-form-from-spreadsheet.html), then put `{{Prefilled Link}}` in the draft.
+
 **Can I personalize the subject line?** Yes. Placeholders work in both the subject and the body.
 
 **What happens if a cell is empty?** The placeholder is replaced with nothing. Rows with an empty **Email** cell are skipped.
