@@ -38,6 +38,7 @@ New to mail merge? Read the [step-by-step guide](https://decodedxr.github.io/she
 ## More free Sheets tools
 
 - [Sheets Deadline Reminders](https://github.com/DecodedXR/sheets-deadline-reminders): email people automatically before a due date in your sheet.
+- [Sheets Doc Merge](https://github.com/DecodedXR/sheets-doc-merge): one PDF per row from a Google Docs template (certificates, invoices, letters).
 
 ## Support
 
