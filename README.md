@@ -39,6 +39,7 @@ New to mail merge? Read the [step-by-step guide](https://decodedxr.github.io/she
 
 ## More free Sheets tools
 
+- [Form Auto-Reply](https://github.com/DecodedXR/form-auto-reply): your own personalized email to every Google Form respondent.
 - [Sheets Deadline Reminders](https://github.com/DecodedXR/sheets-deadline-reminders): email people automatically before a due date in your sheet.
 - [Sheets Doc Merge](https://github.com/DecodedXR/sheets-doc-merge): one PDF per row from a Google Docs template (certificates, invoices, letters).
 
