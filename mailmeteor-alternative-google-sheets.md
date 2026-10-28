@@ -23,7 +23,7 @@ So the free plan covers scheduling, and follow-ups are what pushes people onto P
 | Emails per day | 1,000 | Gmail's script limit: about 100 on personal Gmail, 1,500 on Workspace |
 | Follow-ups to non-repliers | Yes, up to 5, automatic | One per person, in one click, in the same thread |
 | Scheduled sending | Yes | Yes, one scheduled merge at a time |
-| Different attachment per person | Check their docs | Yes, from a column of Drive links |
+| Different attachment per person | Yes, from an Attachment column of Drive links (files shared "Anyone with the link", up to 5 MB) | Yes, from a column of Drive links; files can stay private |
 | Open and click tracking | Yes | No |
 | How it's installed | Workspace add-on | One script pasted into your Google Sheet |
 | Who runs it | Mailmeteor's service | Your own copy of the code, in your own Google account |
