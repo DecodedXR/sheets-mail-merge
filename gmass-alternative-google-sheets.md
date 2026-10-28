@@ -1,5 +1,5 @@
 ---
-title: GMass alternative: Sheets mail merge with follow-ups, no subscription
+title: "GMass alternative: Sheets mail merge with follow-ups, no subscription"
 description: Mail merge from Google Sheets with scheduled sends and one-click follow-ups to non-repliers, for $12 once instead of a monthly plan. An honest GMass comparison.
 image: https://decodedxr.github.io/sheets-mail-merge/assets/cover.png
 ---
