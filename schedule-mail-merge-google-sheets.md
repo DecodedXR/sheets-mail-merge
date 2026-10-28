@@ -36,7 +36,7 @@ Things to know:
 - **Cancel Scheduled Send** cancels it. One scheduled merge at a time.
 - Gmail's limits still apply: about 100 recipients a day on a personal account and 1,500 on Google Workspace.
 
-Pro can also [follow up automatically with everyone who didn't reply](mail-merge-follow-up-emails-google-sheets.html), in the same email thread.
+Pro can also [follow up with everyone who didn't reply in one click](mail-merge-follow-up-emails-google-sheets.html), in the same email thread.
 
 ## FAQ
 

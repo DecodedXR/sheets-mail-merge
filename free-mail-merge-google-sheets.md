@@ -83,7 +83,7 @@ Choose **📧 Mail Merge → Send Emails** and pick the same draft. Each row get
 
 **Does it work with Google Workspace accounts?** Yes, and the daily limit is higher there.
 
-Want it to send at a set time, or follow up with everyone who didn't reply? See [how to schedule a mail merge](schedule-mail-merge-google-sheets.html) and [automatic follow-ups](mail-merge-follow-up-emails-google-sheets.html).
+Want it to send at a set time, or follow up with everyone who didn't reply? See [how to schedule a mail merge](schedule-mail-merge-google-sheets.html) and [one-click follow-ups](mail-merge-follow-up-emails-google-sheets.html).
 
 ---
 

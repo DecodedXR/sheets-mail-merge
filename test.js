@@ -10,10 +10,13 @@ assert.deepEqual([...ctx.driveIds_('')], []);
 const pages = fs.readdirSync(__dirname).filter(f => f.endsWith('.md') && f !== 'README.md' && f !== 'index.md');
 const read = f => fs.readFileSync(__dirname + '/' + f, 'utf8');
 for (const f of pages) {
-  assert.match(read(f), /^---\r?\ntitle: .+\r?\ndescription: .+/, f + ': missing title/description');
+  const md = read(f);
+  assert.match(md, /^---\r?\ntitle: .+\r?\ndescription: .+[\s\S]*?\r?\n---\r?\n/, f + ': missing title/description');
+  assert.equal(md.split('{% raw %}').length, md.split('{% endraw %}').length, f + ': unbalanced {% raw %}'); // {{placeholders}} need raw
   assert.ok(read('index.md').includes('(' + f.replace(/\.md$/, '.html') + ')'), f + ': not linked from index.md');
 }
+// ponytail: catches [text](page.html), ./page.html, #anchors and absolute links to this site; reference-style links aren't used here
 for (const f of [...pages, 'index.md'])
-  for (const [, page] of read(f).matchAll(/\]\(([\w-]+)\.html\)/g))
-    assert.ok(pages.includes(page + '.md'), f + ': broken link ' + page + '.html');
+  for (const [, page] of read(f).matchAll(/\]\((?:\.\/|https:\/\/decodedxr\.github\.io\/sheets-mail-merge\/)?([\w-]+)\.html[#)" ]/g))
+    assert.ok(page === 'index' || pages.includes(page + '.md'), f + ': broken link ' + page + '.html');
 console.log('ok');
