@@ -17,6 +17,7 @@ Send a personalized Gmail to every row of a Google Sheet, using a Gmail draft as
 - [A free YAMM alternative (no 20-a-day cap)](free-yamm-alternative.html)
 - [How to schedule a mail merge (send later)](schedule-mail-merge-google-sheets.html)
 - [Follow up with people who didn't reply](mail-merge-follow-up-emails-google-sheets.html)
+- [A GMass alternative with follow-ups, no subscription](gmass-alternative-google-sheets.html)
 
 ## Get it
 
