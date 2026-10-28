@@ -30,6 +30,9 @@ The script adds an **Email Status** column the first time it runs, and records e
 
 ## Step 2: Add the script
 
+**Shortcut:** [make a copy of the template sheet](https://docs.google.com/spreadsheets/d/1H_Lh1iY124I96X6oYUX8QwewkfaaFQEv7jW7lUsrX1c/copy), which already has the script attached, paste your list into it, and skip to Step 3.
+
+
 1. In the sheet, open **Extensions → Apps Script**.
 2. Delete the placeholder code.
 3. Paste in the contents of [`Code.gs`](https://github.com/DecodedXR/sheets-mail-merge/blob/main/Code.gs) and click **Save**.

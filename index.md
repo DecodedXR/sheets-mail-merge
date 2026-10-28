@@ -21,6 +21,9 @@ Send a personalized Gmail to every row of a Google Sheet, using a Gmail draft as
 
 ## Get it
 
+Fastest: **[make a copy of the template sheet](https://docs.google.com/spreadsheets/d/1H_Lh1iY124I96X6oYUX8QwewkfaaFQEv7jW7lUsrX1c/copy)**, with the script already attached.
+
+
 The script and full instructions are on GitHub: [DecodedXR/sheets-mail-merge](https://github.com/DecodedXR/sheets-mail-merge). It's MIT licensed and free.
 
 Need scheduled sends or one-click follow-ups to everyone who didn't reply? [Mail Merge Pro](https://decodedpc.gumroad.com/l/tcfsse) adds both for a one-time $12.

@@ -12,6 +12,10 @@ Send personalized Gmail from a Google Sheet, using a normal Gmail draft as the t
 
 New to mail merge? Read the [step-by-step guide](https://decodedxr.github.io/sheets-mail-merge/free-mail-merge-google-sheets.html).
 
+## Fastest start: copy the template
+
+**[Make a copy of the template sheet](https://docs.google.com/spreadsheets/d/1H_Lh1iY124I96X6oYUX8QwewkfaaFQEv7jW7lUsrX1c/copy)**. It already has the script attached, so skip steps 3 and 4 below and just reload the copy.
+
 ## One-time setup (5 minutes)
 
 1. Open the Google Sheet with your recipient list.
