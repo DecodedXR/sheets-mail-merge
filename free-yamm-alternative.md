@@ -44,7 +44,7 @@ The full walkthrough is in the [step-by-step guide](free-mail-merge-google-sheet
 
 Gmail limits how many recipients a script can email per day. When the limit is reached, the script stops cleanly and tells you. Run it again the next day: rows already marked as sent are skipped, so it picks up where it left off.
 
-Want it to send at a set time, or follow up with everyone who didn't reply? See [how to schedule a mail merge](schedule-mail-merge-google-sheets.html) and [automatic follow-ups](mail-merge-follow-up-emails-google-sheets.html).
+Want it to send at a set time, or follow up with everyone who didn't reply? See [how to schedule a mail merge](schedule-mail-merge-google-sheets.html) and [one-click follow-ups](mail-merge-follow-up-emails-google-sheets.html).
 
 ---
 
