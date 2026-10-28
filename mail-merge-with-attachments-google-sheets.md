@@ -47,6 +47,8 @@ Choose **📧 Mail Merge → Send Emails**. Each row's **Email Status** cell rec
 
 If each person's file is something like a certificate or invoice that you'd otherwise make by hand, [Sheets Doc Merge](https://decodedxr.github.io/sheets-doc-merge/generate-pdfs-certificates-from-google-sheets.html) builds one PDF per row from a Google Docs template and can email each one, all in one step.
 
+Want it to send at a set time, or follow up with everyone who didn't reply? See [how to schedule a mail merge](schedule-mail-merge-google-sheets.html) and [automatic follow-ups](mail-merge-follow-up-emails-google-sheets.html).
+
 ---
 
 [Get the script on GitHub](https://github.com/DecodedXR/sheets-mail-merge) · [Setup guide](free-mail-merge-google-sheets.html) · If it saves you time, you can [pay what you want on Gumroad](https://decodedpc.gumroad.com/l/hokvda).

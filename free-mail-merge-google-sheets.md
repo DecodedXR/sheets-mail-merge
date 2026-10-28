@@ -83,6 +83,8 @@ Choose **📧 Mail Merge → Send Emails** and pick the same draft. Each row get
 
 **Does it work with Google Workspace accounts?** Yes, and the daily limit is higher there.
 
+Want it to send at a set time, or follow up with everyone who didn't reply? See [how to schedule a mail merge](schedule-mail-merge-google-sheets.html) and [automatic follow-ups](mail-merge-follow-up-emails-google-sheets.html).
+
 ---
 
 [Get the script on GitHub](https://github.com/DecodedXR/sheets-mail-merge) · If it saves you time, you can [pay what you want on Gumroad](https://decodedpc.gumroad.com/l/hokvda). · Also free: [automatic deadline reminders from Google Sheets](https://decodedxr.github.io/sheets-deadline-reminders/automatic-email-reminders-google-sheets.html)

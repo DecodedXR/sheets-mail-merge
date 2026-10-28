@@ -37,6 +37,10 @@ New to mail merge? Read the [step-by-step guide](https://decodedxr.github.io/she
 - **Attachments** column (optional): one or more Google Drive links per row, separated by commas. Each file is attached to that row's email only; Google Docs, Sheets and Slides are attached as PDFs. Gmail's 25 MB limit per email applies. Using it adds a Google Drive permission the first time.
 - Blank email cells are skipped; bad addresses get `ERROR: ...` in the status column and are retried on the next run (fix the address first).
 
+## Need scheduling or follow-ups?
+
+[Mail Merge Pro](https://decodedpc.gumroad.com/l/tcfsse) ($12, one-time) adds **Schedule Send** (it goes out at a set time, sheet closed) and **Follow Up With Non-Repliers** (one click, in the same thread, skipping anyone who replied).
+
 ## More free Sheets tools
 
 - [Gmail CSV to Sheets](https://github.com/DecodedXR/gmail-csv-to-sheets): import emailed CSV reports into a sheet every hour.

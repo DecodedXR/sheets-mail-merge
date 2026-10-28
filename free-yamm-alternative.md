@@ -27,7 +27,7 @@ If you only need the core job, a personalized email to each row, you can do it f
 | Install | Workspace add-on with access to your account | One script you paste into your own sheet; nothing third-party gets access |
 | Different attachment per person | — | Yes, from an Attachments column of Drive links ([guide](mail-merge-with-attachments-google-sheets.html)) |
 | Open and click tracking | Yes | No |
-| Scheduled sending | Paid plans | Not in the free script |
+| Scheduled sending | Paid plans | Not in the free script ([Mail Merge Pro](https://decodedpc.gumroad.com/l/tcfsse), $12 one-time) |
 
 Be honest with yourself about the last two rows. If you need open tracking or a polished interface, YAMM's paid plans are a reasonable buy. If you need more than 20 sends a day and nothing else, the free script is enough.
 
@@ -43,6 +43,8 @@ The full walkthrough is in the [step-by-step guide](free-mail-merge-google-sheet
 ## When the daily limit is reached
 
 Gmail limits how many recipients a script can email per day. When the limit is reached, the script stops cleanly and tells you. Run it again the next day: rows already marked as sent are skipped, so it picks up where it left off.
+
+Want it to send at a set time, or follow up with everyone who didn't reply? See [how to schedule a mail merge](schedule-mail-merge-google-sheets.html) and [automatic follow-ups](mail-merge-follow-up-emails-google-sheets.html).
 
 ---
 
