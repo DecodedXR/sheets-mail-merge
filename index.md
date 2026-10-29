@@ -28,3 +28,5 @@ Fastest: **[make a copy of the template sheet](https://docs.google.com/spreadshe
 The script and full instructions are on GitHub: [DecodedXR/sheets-mail-merge](https://github.com/DecodedXR/sheets-mail-merge). It's MIT licensed and free.
 
 Need scheduled sends or one-click follow-ups to everyone who didn't reply? [Mail Merge Pro](https://decodedpc.gumroad.com/l/tcfsse) adds both for a one-time $12.
+
+Need it to work a bit differently for your sheet? [Get a custom version written for you ($49)](https://decodedxr.github.io/free-google-sheets-scripts/custom-google-sheets-script.html): tested, within 3 days, or a full refund.
